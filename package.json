@@ -6,7 +6,12 @@
   "author": "yongtany",
   "license": "MIT",
   "scripts": {
-    "start": "node index.js",
-    "prestart": "tsc"
+    "start": "tsc-watch --onSuccess \" node dist/index.js\" "
+  },
+  "devDependencies": {
+    "tsc-watch": "^2.1.2"
+  },
+  "dependencies": {
+    "typescript": "^3.3.4000"
   }
 }
